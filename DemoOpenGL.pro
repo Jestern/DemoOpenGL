@@ -30,4 +30,6 @@ SOURCES += main.cpp\
 HEADERS  += windowview.h \
     glwidget.h
 
+LIBS += -lGLEW
+
 FORMS    += windowview.ui
