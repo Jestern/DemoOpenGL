@@ -31,3 +31,10 @@ HEADERS  += windowview.h \
     glwidget.h
 
 FORMS    += windowview.ui
+
+DISTFILES += \
+    shaders/triangle.frag \
+    shaders/triangle.vert
+
+RESOURCES += \
+    shaders.qrc

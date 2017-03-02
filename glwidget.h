@@ -2,11 +2,12 @@
 #define GLWIDGET_H
 
 #include <QOpenGLWidget>
+#include <QMatrix4x4>
 #include <QOpenGLFunctions_4_5_Core>
+#include <QFile>
+#include <QByteArray>
+
 #include <QDebug>
-
-
-
 
 class GLWidget : public QOpenGLWidget, protected QOpenGLFunctions_4_5_Core {
 public:
@@ -19,6 +20,7 @@ public:
 private:
     GLuint shader_programme;
     GLuint vao;
+    QMatrix4x4 translate;
 
 };
 
